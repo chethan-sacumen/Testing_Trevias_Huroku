@@ -12,7 +12,12 @@ def home():
         place = request.form.get('place')
         
         return f'{name.capitalize()}, Welcome to {place}'
-    return render_template('data.html')         
+    return render_template('data.html')     
+
+#Testing to check if it works
+@app.route('/test')
+def test():
+    return "Works!"    
 
 # Start the apllication
 if __name__ == '__main__':
